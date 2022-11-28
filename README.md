@@ -41,12 +41,14 @@ Initial data (src\main\resources\data.sql) will be loaded in the H2 database whe
 This application is for demo only. It provides APIs for following 2 features
 - Retrieve Account Balance
 - Create Transaction
+- Read Exchange Rate Data
+- 
 ### Basic API Information
 | Method | Path | Usage |
 | --- | --- | --- |
-| GET | /v1/accounts/{id}/balances | retrieve account balance |
-| POST | /v1/transaction | create transaction |
-
+| GET | /api/v1/accounts//{accountId}/balances| retrieve account balance |
+| POST | /api//v1/fundTrasfer | create fundTrasfer |
+| GET  | /api/v1/exchangeRate/{currenyCode}
 ### Currency exchange info fetch API
 To get the exchange rate real time open API is used  [ExchageRate-api](https://www.exchangerate-api.com/docs/free)
 
