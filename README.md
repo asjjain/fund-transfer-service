@@ -48,7 +48,7 @@ This application is for demo only. It provides APIs for following 2 features
 | --- | --- | --- |
 | GET | /api/v1/accounts//{accountId}/balances| retrieve account balance |
 | POST | /api//v1/fundTrasfer | create fundTrasfer |
-| GET  | /api/v1/exchangeRate/{currenyCode}
+| GET  | /api/v1/exchangeRate/{currenyCode}|get the exchage rate for the currecycode|
 ### Currency exchange info fetch API
 To get the exchange rate real time open API is used  [ExchageRate-api](https://www.exchangerate-api.com/docs/free)
 
