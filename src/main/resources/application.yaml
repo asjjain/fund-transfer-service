@@ -1,0 +1,59 @@
+# Database Settings
+spring:
+  datasource:
+    username: money
+    url: jdbc:h2:mem:fundtrasferapp;
+    driverClassName: org.h2.Driver
+    password: abcd12345
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: 'true'
+        use_sql_comments: 'true'
+        show_sql: 'true'
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings.trace: false
+      settings.web-allow-others: false
+
+
+server:
+  error:
+    include-stacktrace: never
+
+feign:
+  client:
+    config:
+      default:
+        read-timeout: '20000'
+        connect-timeout: '20000'
+  circuitbreaker:
+    enabled: true
+
+app:
+  feign:
+    config:
+      name: exchangerate-api
+      url: https://open.er-api.com/v6/latest/
+
+swagger:
+  contact: Ashish Jain
+  description: 'Fund Transfer APIs description. '
+  license:
+    url: ''
+    nodeValue: ''
+  terms:
+    service:
+      url: 'http://fundtransferterm.com'
+  group:
+    name: fundtransferservice
+  paths:
+    regex: /*
+  title: Fund Transfer APIs
+  version: '1.0.0'
