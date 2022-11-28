@@ -1,4 +1,4 @@
-package com.fundtransfer.fundtransferservice.com.fundtransfer.fundtransferservice.controller;
+package com.fundtransfer.fundtransferservice.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fundtransfer.fundtransferservice.client.ExchangeRateApiClient;
