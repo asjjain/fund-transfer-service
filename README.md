@@ -1,5 +1,5 @@
 # MoneyTransferAPI
-Simple Spring boot application which provide RESTful API that performs finds transfer between two accounts with currency exchange.
+Simple Spring boot application which provide RESTful API that performs funds transfer between two accounts with currency exchange.
 
 ### Prerequisite
 - Maven
